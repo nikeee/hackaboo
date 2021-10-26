@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<link rel="stylesheet" href="index.css">
+
+{{#each terms}}
+<article>
+	<h1 class="term">{{term}}</h1>
+	<div class="forbidden-term-list">
+		{{#forbidden_terms}}
+		<div class="forbidden-term">
+			{{term_entry this}}
+		</div>
+		{{/forbidden_terms}}
+	</div>
+</article>
+{{/each}}

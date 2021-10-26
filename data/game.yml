@@ -1,0 +1,714 @@
+$schema: "./schema.json"
+terms:
+
+#region Protocols
+
+- term: Secure Shell (SSH)
+  forbidden_terms:
+  - Remote
+  - Terminal
+  - Port 22
+  - Telnet
+  - TODO
+
+- term: Domain Name System (DNS)
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: SMTP
+  forbidden_terms:
+  - POP3
+  - (E-)Mail
+  - IMAP
+  - Protocol
+  - STARTTLS
+
+#endregion
+#region Software
+
+- term: Chrome
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Firefox
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+- term: systemd
+  forbidden_terms:
+  - Lennart Pöttering
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Alsa
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: PulseAudio
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: bash
+  forbidden_terms:
+  - Shell
+  - zsh
+  - TODO
+  - TODO
+  - TODO
+
+- term: zsh
+  forbidden_terms:
+  - Shell
+  - bash
+  - TODO
+  - TODO
+  - TODO
+
+- term: vim
+  forbidden_terms:
+  - Emacs
+  - Editor
+  - War
+  - TODO
+  - TODO
+
+- term: emacs
+  forbidden_terms:
+  - vim
+  - Editor
+  - War
+  - TODO
+  - TODO
+
+- term: grep
+  forbidden_terms:
+  - regular expression
+  - search
+  - Unix
+  - Coreutils
+  - GNU/
+
+#endregion
+#region Programming Languages
+
+- term: Python
+  forbidden_terms:
+  - Data Science
+  - Machine Learning
+  - Programming language
+  - TODO
+  - TODO
+
+- term: JavaScript
+  forbidden_terms:
+  - ECMA / ES
+  - npm
+  - Brendan Eich
+  - Browser
+  - Programming Language
+
+- term: SQL
+  forbidden_terms:
+  - Database
+  - Language
+  - Table
+  - Query
+  - TODO
+
+- term: Java
+  forbidden_terms:
+  - Oracle
+  - RAM
+  - Bytecode
+  - VM
+  - TODO
+
+- term: Perl
+  forbidden_terms:
+  - illegible
+  - PHP
+  - language
+  - exploit
+  - camel
+
+#endregion
+#region Personalities
+
+- term: Edward Snowden
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Richard M. Stallman
+  forbidden_terms:
+  - GNU
+  - Emacs
+  - Free Software
+  - TODO
+  - TODO
+
+- term: Alan Turing
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Ada Lovelace
+  forbidden_terms:
+  - First
+  - Woman
+  - TODO
+  - TODO
+  - TODO
+
+- term: Grace Hopper
+  forbidden_terms:
+  - Compiler
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Jacob Appelbaum
+  forbidden_terms:
+  - TOR
+  - Journalist
+  - TODO
+  - TODO
+  - TODO
+
+- term: Bill Gates
+  forbidden_terms:
+  - Microsoft
+  - Windows
+  - TODO
+  - TODO
+  - TODO
+
+- term: Steve Balmer
+  forbidden_terms:
+  - Microsoft
+  - Windows
+  - Developers
+  - TODO
+  - TODO
+
+- term: Bruce Schneier
+  forbidden_terms:
+  - Cryptography
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Konrad Zuse
+  forbidden_terms:
+  - Z3
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Lennart Poettering
+  forbidden_terms:
+  - systemd
+  - TODO
+  - TODO
+  - TODO
+  - bad software
+
+- term: Linus Torvalds
+  forbidden_terms:
+  - Linux
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Steve Jobs
+  forbidden_terms:
+  - Apple
+  - NeXT
+  - Pixar
+  - Wozniak
+  - TODO
+
+- term: Donald E. Knuth
+  forbidden_terms:
+  - TeX
+  - Computerphile
+  - TODO
+  - TODO
+  - TODO
+
+- term: Tim Berners-Lee
+  forbidden_terms:
+  - World Wide Web
+  - Internet
+  - TODO
+  - TODO
+  - TODO
+
+- term: Dennis Ritchie
+  forbidden_terms:
+  - C Language
+  - Unix
+  - TODO
+  - TODO
+  - TODO
+
+- term: John von Neumann
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Bjarne Stroustrup
+  forbidden_terms:
+  - C++
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Sergey Brin
+  forbidden_terms:
+  - Google
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Larry Page
+  forbidden_terms:
+  - Google
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Sundar Pichai
+  forbidden_terms:
+  - Google
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Mark Zuckerberg
+  forbidden_terms:
+  - Facebook
+  - Instagram
+  - WhatsApp
+  - TODO
+  - TODO
+
+- term: Gottfrid Svartholm
+  forbidden_terms:
+  - Pirate Bay
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: James Gosling
+  forbidden_terms:
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Guido van Rossum
+  forbidden_terms:
+  - Python
+  - Dictator / BDFL
+  - TODO
+  - TODO
+  - TODO
+
+- term: Brendan Eich
+  forbidden_terms:
+  - JavaScript
+  - Brave
+  - Mozilla
+  - TODO
+  - TODO
+
+- term: Ron Rivest
+  forbidden_terms:
+  - RSA
+  - Math
+  - Cryptography
+  - TODO
+  - TODO
+
+- term: Brian Kernighan
+  forbidden_terms:
+  - Unix
+  - C Language
+  - awk
+  - TODO
+  - TODO
+
+- term: Leslie Lamport
+  forbidden_terms:
+  - LaTeX
+  - TLA
+  - TODO
+  - TODO
+  - TODO
+
+- term: Ken Thompson
+  forbidden_terms:
+  - Unix
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+# Edsger Dijkstra
+- term: Dijkstra
+  forbidden_terms:
+  - Path finding
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+# Richard Hamming
+- term: Hamming
+  forbidden_terms:
+  - Distance
+  - Code
+  - TODO
+  - TODO
+  - TODO
+
+- term: John McAfee
+  forbidden_terms:
+  - Drugs
+  - Anti-Virus
+  - TODO
+  - TODO
+  - TODO
+
+- term: Elon Musk
+  forbidden_terms:
+  - Tesla
+  - SpaceX
+  - Boring
+  - Doge
+  - Cybertruck
+
+# Bertrand Russell
+
+#endregion
+
+- term: Docker
+  forbidden_terms:
+  - Container
+  - Linux
+  - Namespaces
+  - TODO
+  - TODO
+
+- term: Linux
+  forbidden_terms:
+  - Kernel
+  - Unix
+  - TODO
+  - TODO
+  - TODO
+
+- term: Internet Explorer
+  forbidden_terms:
+  - Browser
+  - Microsoft
+  - Edge
+  - TODO
+  - TODO
+
+- term: MacOS
+  forbidden_terms:
+  - Apple
+  - Operating System
+  - TODO
+  - TODO
+  - TODO
+
+- term: sudo
+  forbidden_terms:
+  - root
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Node Package Manager
+  forbidden_terms:
+  - JavaScript
+  - Vulnerabilties
+  - TODO
+  - TODO
+  - TODO
+
+- term: Oracle
+  forbidden_terms:
+  - Database
+  - Java
+  - MySQL
+  - CIA
+  - TODO
+
+- term: Ubuntu
+  forbidden_terms:
+  - Linux
+  - Canonical
+  - Distribution
+  - TODO
+  - TODO
+
+- term: Arch Linux
+  forbidden_terms:
+  - Use
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Nix Operating System
+  forbidden_terms:
+  - Haskell
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Chaos Computer Club
+  forbidden_terms:
+  - Hacker
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Indentation
+  forbidden_terms:
+  - Tabs
+  - Spaces
+  - Formatting
+  - War
+  - TODO
+
+- term: Android
+  forbidden_terms:
+  - Google
+  - Phone
+  - Operating System
+  - Linux
+  - TODO
+
+- term: This Game
+  forbidden_terms:
+  - Taboo
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Arduino
+  forbidden_terms:
+  - Hardware
+  - Microcontroller
+  - TODO
+  - TODO
+  - TODO
+
+- term: Lenovo
+  forbidden_terms:
+  - IBM
+  - Laptop/Notebook
+  - TODO
+  - TODO
+  - TODO
+
+- term: "' OR 1=1;--"
+  forbidden_terms:
+  - SQL
+  - Database
+  - Comment
+  - Vulnerability
+  - Injection
+
+- term: undefined
+  forbidden_terms:
+  - JavaScript
+  - "null"
+  - None
+  - Nil
+  - Value
+
+- term: Anonymous
+  forbidden_terms:
+  - Mask
+  - Legion
+  - 4chan
+  - Hacker
+  - TODO
+
+- term: Guy Fawkes
+  forbidden_terms:
+  - Mask
+  - V for Vendatta
+  - Anonymous
+  - TODO
+  - TODO
+
+- term: DDoS
+  forbidden_terms:
+  - Kiddy
+  - Botnet
+  - TODO
+  - TODO
+  - TODO
+
+- term: HyperText Markup Language
+  forbidden_terms:
+  - Programming Language # ( ͡° ͜ʖ ͡°)
+  - World Wide Web
+  - DOM
+  - TODO
+  - TODO
+
+- term: eXtensible Markup Language
+  forbidden_terms:
+  - JSON
+  - TODO
+  - TODO
+  - TODO
+  - TODO
+
+- term: Mozilla
+  forbidden_terms:
+  - Firefox
+  - Thunderbird
+  - MDN
+  - TODO # Spidermonkey
+  - TODO
+
+- term: The Onion Router
+  forbidden_terms:
+  - Darknet
+  - Domain
+  - Browser
+  - TODO
+  - TODO
+
+- term: Bitcoin
+  forbidden_terms:
+  - Crypto(graphy)
+  - Scam
+  - Blockchain
+  - pay
+  - Currency
+
+- term: Merkle–Damgård construction
+  forbidden_terms:
+  - SHA
+  - Message Digest
+  - Hash
+  - Signature
+  - Compression
+
+- term: Hash Table
+  forbidden_terms:
+  - Data Structure
+  - List
+  - Map
+  - Dictionary
+  - TODO
+
+- term: LZMA
+  forbidden_terms:
+  - Compression
+  - Igor Pavlov
+  - zip/7z/tar
+  - Dictionary
+  - LZ77
+
+- term: Software
+  forbidden_terms:
+  - Hardware
+  - Firmware
+  - TODO
+  - TODO
+  - TODO
+
+- term: Matrix
+  forbidden_terms:
+  - Movie
+  - Hacker
+  - Keanu Reeves
+  - Chosen One
+  - Neo
+
+- term: size_t
+  forbidden_terms:
+  - C/C++
+  - memory
+  - array
+  - TODO
+  - TODO
+
+- term: Unicode
+  forbidden_terms:
+  - Character Set
+  - Alphabet
+  - ASCII
+  - UTF
+  - Emoji
+
+- term: Boolean
+  forbidden_terms:
+  - 'False'
+  - Two
+  - Data Type
+  - 'True'
+  - logic
+
+- term: Hacker News
+  forbidden_terms:
+  - YCombinator
+  - Paul Graham
+  - TODO
+  - TODO
+  - TODO

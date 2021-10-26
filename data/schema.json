@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "terms": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "term": { "type": "string" },
+                    "forbidden_terms": {
+                        "type": "array",
+                        "minItems": 5,
+                        "maxItems": 5
+                    }
+                }
+            }
+        }
+    }
+}

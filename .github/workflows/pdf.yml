@@ -1,0 +1,25 @@
+name: Build PDF
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
+    - run: pip install --user pipenv
+    - run: pipenv sync
+    - run: pipenv run ./generate-cards.py
+    - uses: actions/upload-artifact@v2
+      with:
+        name: cards
+        path: out/*

@@ -1,0 +1,64 @@
+/*
+TODO: Make some variations (and also ones that can be printed on both sides with different themes)
+Ideas for themes:
+- Obligatory matrix-like green char rain
+- PCB traces
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Cascadia Mono", Consolas, monospace;
+}
+
+@page {
+	/* * { } doesn't affect @page */
+	margin: 0;
+	padding: 0;
+
+	width: 52mm;
+	height: 74mm;
+}
+
+html {
+	background-color: #333;
+}
+
+article {
+	page-break-before: always;
+
+	text-align: center;
+}
+
+.term {
+	font-size: 4.5mm;
+	padding: 4mm 0;
+	font-weight: bold;
+
+	background-color: #fff;
+	border-bottom: 0.25mm solid black;
+}
+
+.forbidden-term-list {
+/* 	Doesn't work for some reason: */
+/*
+	display: flex;
+	flex-direction: column;
+	gap: 5mm;
+*/
+
+/*
+	background-color: #333;
+*/
+}
+
+.forbidden-term {
+	margin: 2.5mm;
+
+	font-size: 3mm;
+	padding: 2mm 0;
+	background-color: #fff;
+
+	border: 0.125mm solid #777;
+	border-radius: 2mm;
+}

@@ -1,0 +1,23 @@
+name: Validate Data Schema
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/CI.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: npm install -g pajv
+    - run: pajv validate -s data/schema.json -d data/game.yml
