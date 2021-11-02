@@ -1,6 +1,11 @@
 $schema: "./schema.json"
 terms:
 
+- term: SQLite
+  forbidden_terms:
+  - Database
+  -
+
 #region Protocols
 
 - term: Secure Shell (SSH)
@@ -9,15 +14,18 @@ terms:
   - Terminal
   - Port 22
   - Telnet
-  - TODO
+  - Server
+  # - Keys
 
 - term: Domain Name System (DNS)
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - HTTP
+  - IP Address
+  - Root Server
+  - Resolve
+  - A/AAAA
+# - Browser
+# - <Some DNS Server address>
 
 - term: SMTP
   forbidden_terms:
@@ -26,80 +34,111 @@ terms:
   - IMAP
   - Protocol
   - STARTTLS
+  # - Send
+  # - Port 25
 
 #endregion
 #region Software
 
-- term: Chrome
+- term: Google Chrome
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - Tracking
+  - Browser
+  - Internet
+  - Firefox
+  - Webkit
+  # - Blink
+  # - Surf
+  # - V8
+  # -
 
-- term: Firefox
+- term: Mozilla Firefox
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - Browser
+  - Internet
+  - Thunderbird
+  - User-Agent
+  - Spidermonkey
+  # - VPN
+  # - Tree Style
+
 - term: systemd
   forbidden_terms:
   - Lennart Pöttering
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - init
+  - Boot
+  - Upstart
+  - Service
+  - system-/journalctl
+  # - NTP client
+  # -
 
 - term: Alsa
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - Pulse Audio
+  - Sound
+  - /dev/snd
+  - Speaker
+  - Doesn't work
+
+- term: Crontab
+  forbidden_terms:
+  - job
+  - time
+  - Schedule
+  - repetitive
+  - reboot
+  # - script
 
 - term: PulseAudio
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - Lennart Pöttering
+  - Pipewire
+  - Alsa
+  - Sound
+  - Speaker
+
+- term: Wireguard
+  forbidden_terms:
+  - VPN
+  - simple
+  - network
+  - kernel
+  - Site-to-site/point
 
 - term: bash
   forbidden_terms:
-  - Shell
+  - shell
   - zsh
-  - TODO
-  - TODO
-  - TODO
+  - terminal
+  - prompt
+  - script
+  # - ksh/csh/fish/ash
 
 - term: zsh
   forbidden_terms:
-  - Shell
+  - shell
   - bash
-  - TODO
-  - TODO
-  - TODO
+  - terminal
+  - prompt
+  - auto completion
+  # - ksh/csh/fish/ash
 
 - term: vim
   forbidden_terms:
-  - Emacs
-  - Editor
-  - War
-  - TODO
-  - TODO
+  - emacs
+  - editor war
+  - nano / cat
+  - exit / :!q
+  - hjkl
 
 - term: emacs
   forbidden_terms:
   - vim
-  - Editor
-  - War
-  - TODO
-  - TODO
+  - editor war
+  - nano / cat
+  - shortcut
+  - browser
 
 - term: grep
   forbidden_terms:
@@ -114,35 +153,46 @@ terms:
 
 - term: Python
   forbidden_terms:
-  - Data Science
-  - Machine Learning
-  - Programming language
-  - TODO
-  - TODO
+  - data science
+  - machine learning
+  - programming language
+  - <some framework>
+  - virtualenv
+  - 2 to 3
+  # - dependency hell
+  # - jupyter
+  # - wheel
+  # - pipenv
+  # - whitespace
 
 - term: JavaScript
   forbidden_terms:
   - ECMA / ES
   - npm
-  - Brendan Eich
-  - Browser
-  - Programming Language
+  - browser
+  - programming language
+  - Node.js
+  # - node_modules
+  # - Brendan Eich
 
 - term: SQL
   forbidden_terms:
-  - Database
-  - Language
-  - Table
-  - Query
-  - TODO
+  - database
+  - language
+  - table
+  - query
+  - relational
+  - "'; DROP TABLE Students --"
+  - <some dbms>
 
 - term: Java
   forbidden_terms:
-  - Oracle
+  - Oracle / Sun
   - RAM
-  - Bytecode
-  - VM
-  - TODO
+  - VM Bytecode
+  - Scala / Kotlin
+  - null pointer
+  # - Spring
 
 - term: Perl
   forbidden_terms:
@@ -157,34 +207,37 @@ terms:
 
 - term: Edward Snowden
   forbidden_terms:
-  - TODO
-  - TODO
+  - leak
+  - whistle blower
   - TODO
   - TODO
   - TODO
 
 - term: Richard M. Stallman
   forbidden_terms:
-  - GNU
+  - GNU / GPL
   - Emacs
-  - Free Software
-  - TODO
-  - TODO
+  - Free Software Foundation
+  - interject
+  - Linux
+  # - open source
+  # - parrot
 
 - term: Alan Turing
   forbidden_terms:
-  - TODO
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - machine
+  - award
+  - computer
+  - (un)computability
+  - ENIGMA
+  # - homosexual
 
 - term: Ada Lovelace
   forbidden_terms:
-  - First
-  - Woman
-  - TODO
-  - TODO
+  - first
+  - woman
+  - Babbage
+  - programming
   - TODO
 
 - term: Grace Hopper
@@ -198,7 +251,15 @@ terms:
 - term: Jacob Appelbaum
   forbidden_terms:
   - TOR
-  - Journalist
+  - journalist
+  - TODO
+  - TODO
+  - TODO
+
+- term: Aaron Swartz
+  forbidden_terms:
+  - TODO
+  - TODO
   - TODO
   - TODO
   - TODO
@@ -207,30 +268,32 @@ terms:
   forbidden_terms:
   - Microsoft
   - Windows
-  - TODO
-  - TODO
-  - TODO
+  - Ballmer
+  - Foundation
+  - Melinda
+  # - Corona
+  # - devil
 
-- term: Steve Balmer
+- term: Steve Ballmer
   forbidden_terms:
   - Microsoft
   - Windows
-  - Developers
+  - developers
   - TODO
   - TODO
 
 - term: Bruce Schneier
   forbidden_terms:
-  - Cryptography
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - cryptography
+  - security
+  - privacy
+  - fish
+  - blog
 
 - term: Konrad Zuse
   forbidden_terms:
   - Z3
-  - TODO
+  - computer
   - TODO
   - TODO
   - TODO
@@ -238,7 +301,7 @@ terms:
 - term: Lennart Poettering
   forbidden_terms:
   - systemd
-  - TODO
+  - Pulse Audio
   - TODO
   - TODO
   - bad software
@@ -246,10 +309,10 @@ terms:
 - term: Linus Torvalds
   forbidden_terms:
   - Linux
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - rant
+  - git
+  - NVIDIA
+  - flip the bird
 
 - term: Steve Jobs
   forbidden_terms:
@@ -257,7 +320,9 @@ terms:
   - NeXT
   - Pixar
   - Wozniak
-  - TODO
+  - iPod
+  # - cancer
+  # - rounded corner
 
 - term: Donald E. Knuth
   forbidden_terms:
@@ -271,8 +336,8 @@ terms:
   forbidden_terms:
   - World Wide Web
   - Internet
-  - TODO
-  - TODO
+  - CERN
+  - HTML
   - TODO
 
 - term: Dennis Ritchie
@@ -302,18 +367,18 @@ terms:
 - term: Sergey Brin
   forbidden_terms:
   - Google
-  - TODO
-  - TODO
-  - TODO
+  - Larry Page
+  - search
+  - Alphabet
   - TODO
 
 - term: Larry Page
   forbidden_terms:
   - Google
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - rank
+  - Sergey Brin
+  - Alphabet
+  - search
 
 - term: Sundar Pichai
   forbidden_terms:
@@ -328,8 +393,8 @@ terms:
   - Facebook
   - Instagram
   - WhatsApp
-  - TODO
-  - TODO
+  - robot
+  - Meta
 
 - term: Gottfrid Svartholm
   forbidden_terms:
@@ -351,9 +416,9 @@ terms:
   forbidden_terms:
   - Python
   - Dictator / BDFL
-  - TODO
-  - TODO
-  - TODO
+  - programming language
+  - Google / Microsoft / Dropbox
+  - C
 
 - term: Brendan Eich
   forbidden_terms:
@@ -366,8 +431,8 @@ terms:
 - term: Ron Rivest
   forbidden_terms:
   - RSA
-  - Math
-  - Cryptography
+  - math
+  - cryptography
   - TODO
   - TODO
 
@@ -398,7 +463,7 @@ terms:
 # Edsger Dijkstra
 - term: Dijkstra
   forbidden_terms:
-  - Path finding
+  - path finding
   - TODO
   - TODO
   - TODO
@@ -415,9 +480,9 @@ terms:
 
 - term: John McAfee
   forbidden_terms:
-  - Drugs
+  - drugs & hookers
   - Anti-Virus
-  - TODO
+  - suicide
   - TODO
   - TODO
 
@@ -426,7 +491,7 @@ terms:
   - Tesla
   - SpaceX
   - Boring
-  - Doge
+  - doge
   - Cybertruck
 
 # Bertrand Russell
@@ -435,18 +500,18 @@ terms:
 
 - term: Docker
   forbidden_terms:
-  - Container
+  - container
   - Linux
-  - Namespaces
-  - TODO
-  - TODO
+  - namespaces
+  - compose
+  - Kubernetes
 
 - term: Linux
   forbidden_terms:
   - Kernel
   - Unix
-  - TODO
-  - TODO
+  - Linus
+  - <some distribution>
   - TODO
 
 - term: Internet Explorer
@@ -468,10 +533,10 @@ terms:
 - term: sudo
   forbidden_terms:
   - root
-  - TODO
-  - TODO
-  - TODO
-  - TODO
+  - file
+  - group
+  - execute
+  - elevated
 
 - term: Node Package Manager
   forbidden_terms:
@@ -564,10 +629,10 @@ terms:
 - term: "' OR 1=1;--"
   forbidden_terms:
   - SQL
-  - Database
-  - Comment
-  - Vulnerability
-  - Injection
+  - database
+  - comment
+  - vulnerability
+  - injection
 
 - term: undefined
   forbidden_terms:
@@ -676,9 +741,9 @@ terms:
 - term: Matrix
   forbidden_terms:
   - Movie
-  - Hacker
+  - Chat
   - Keanu Reeves
-  - Chosen One
+  - Messaging
   - Neo
 
 - term: size_t
