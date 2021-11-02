@@ -3,8 +3,11 @@ terms:
 
 - term: SQLite
   forbidden_terms:
-  - Database
-  -
+  - database
+  - file
+  - embedded
+  - application
+  - connection
 
 #region Protocols
 
